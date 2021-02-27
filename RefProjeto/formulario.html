@@ -1,0 +1,53 @@
+<html>
+    <head>
+    <meta charset="UTF-8" lang="pt-br">
+        <title>Formulario de Cadastro</title>
+        <link rel="stylesheet" type="text/css" href="form.css">
+    </head>
+    <body>
+
+        <div class="form-estilo">
+        <h2 class="form-titulo">Fórmulario de Cadastro</h2>
+        <form id="form-cadastro" autocomplete="off">
+
+            <!--Inicio da Primeira Seção com Seus Dados-->
+            <div class="secao"><span>1</span>Seus Dados</div>
+            <div class="form-secao-Dados">
+                <label>Primeiro Nome <input type="text" class="form-input-PrimeiroNome" id="PrimeiroNome" value="Alan"/></label>
+                <label>Ultimo Nome <input type= "text" class="form-input-UltimoNome" id="UltimoNome"/></label>
+                <label>Naturalidade <input type= "text" class="form-input-naturalidade" id="naturalidade"/></label>
+                <label>Data de Nascimento <input type="date" class="form-input-Nascimento" id="Nascimento"/></label>
+            </div> <!--Fim da Primeira Seção com Seus Dados-->
+
+            <!--Inicio da Segunda Seção com Seus Dados-->
+            <div class="secao"><span>2</span> Responsáveis </div>
+            <div class="form-secao-Dados">
+                <label>Nome do Pai <input type= "text" class="form-input-NomePai" id="NomePai"/></label>
+                <label>Nome da Mãe <input type= "text" class="form-input-NomeMae" id="NomeMae"/></label>
+            </div><!--Fim da Segunda Seção com Seus Dados-->
+
+            <!--Inicio da Primeira Seção com Seus Dados-->
+            <div class="secao"><span>3</span> Localidade/Endereço </div>
+            <div class="form-secao-Dados">
+                <label>Cidade <input type= "text" class="form-input-cidade" id="cidade"/></label>
+                <label>Endereço <input type= "text" class="form-input-endereco" id="endereco"/></label>
+            </div><!--Fim da Segunda Seção com Seus Dados-->
+
+            <!--Inicio Seção do botão -->
+            <div class="secao-botao">
+                <input type="submit"  id="enviar" onclick="bntEnviar()" />
+                <span class="trabalha">
+
+            <div class="secao-botao">
+                <input type="checkbox" name="checkbox-trabalha" id="trabalha-checkbox" />Trabalha?
+            </div> <!--Fim Seção do botão -->
+            </span>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+    </body>
+</html>
+
