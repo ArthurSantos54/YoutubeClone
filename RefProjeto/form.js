@@ -1,27 +1,29 @@
 
+let form1 = document.getElementById('form-cadastro');
 
+function getDataForm () {
 
+  let itemInput = [];
+  let json ='';
 
+  [...form1].forEach(el => {
 
+      if(el.id != 'enviar' && el.id != 'trabalha-checkbox'){
 
+        itemInput.push(`${el.id}: ${el.value}`);
 
-let PrimeiroNome = document.getElementById('PrimeiroNome').value;
-let UltimoNome = document.getElementById('UltimoNome').value;
-let naturalidade = document.getElementById('naturalidade').value;
-let Nascimento = document.getElementById('Nascimento').value;
+      }
 
-let NomePai = document.getElementById('NomePai').value;
-let NomeMae = document.getElementById('NomeMae').value;
+      json = JSON.stringify(itemInput);
 
-let cidade = document.getElementById('cidade').value;
-let endereco = document.getElementById('endereco').value;
+  });
 
+  return json
 
+}
 
+function saveData(data){
 
-
-const bntEnviar = () => {
-
-  localStorage.setItem('Pnome',PrimeiroNome)
+  localStorage.setItem('userData', data)
 
 }
