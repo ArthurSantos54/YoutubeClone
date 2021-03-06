@@ -1,3 +1,6 @@
+let formCadastro = document.getElementById('form-cadastro')
+
+
 function enviar(){
 
    let  primeiroNome = document.getElementById('PrimeiroNome').value;
@@ -25,5 +28,8 @@ function enviar(){
    localStorage.setItem('Naturalidade',naturalidade)
 
 }
+
+
+
 
 
