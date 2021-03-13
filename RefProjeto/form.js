@@ -1,8 +1,5 @@
 let form1 = document.getElementById('form-cadastro');
 
-//Carregar os dados na tabela
- let json = JSON.parse(localStorage.getItem('userData')) || [];
-
 function getDataForm () {
 
   let itemInput = [];
