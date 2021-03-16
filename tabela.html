@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dados do Usuario</title>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados do Usuario</title>
 </head>
 <body>
 
 
+
     <style>
+         
+            body{
+                background-color: rgba(0, 0, 0, 0.329)
+                
+            }
 
-    table {
-  border-style: hidden;
-  border-collapse: collapse;
-}
-
-    thead{
-        background-color: rgb(232, 234, 235);
+        #dados-usuario{
+            background-color:rgb(169, 169, 169);
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #dados-usuario th, td {
+      border: 1px solid;
+      padding: 10px;
+      text-align:justify;
     }
-    td{
-            padding: 6px;
+
+    #dados-usuario th {
+      background-color:rgba(0, 0, 0, 0.712);
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
     }
 
 
     </style>
-<!--- Colocar o ID da tabela e remover o border="1" abaixo, todo estilo deve ser feito dentro do style-->
-    <table border="1">
-        <thead>
+
+    <table id="dados-usuario">
             <tr>
                 <th> Primeiro Nome </th>
                  <th>Data de Nascimento</th>
@@ -38,13 +48,8 @@
                  <th>Cidade</th>
                  <th>Endereço</th>
                  <th>Naturalidade</th>
-
              </tr>
-        </thead>
-
-
-        <tbody>
-
+      
             <tr>
                 <td> Exemplo </td>
                 <td> Exemplo </td>
@@ -54,7 +59,6 @@
                 <td> Exemplo </td>
                 <td> Exemplo </td>
                 <td> Exemplo </td>
-
 
             </tr>
             <tr>
@@ -67,9 +71,19 @@
                 <td> Exemplo </td>
                 <td> Exemplo </td>
             </tr>
-        </tbody>
-
+            <tr>
+                <td> Exemplo </td>
+                <td> Exemplo </td>
+                <td> Exemplo </td>
+                <td> Exemplo </td>
+                <td> Exemplo </td>
+                <td> Exemplo </td>
+                <td> Exemplo </td>
+                <td> Exemplo </td>
+            </tr>
+           
 
     </table>
+
 </body>
 </html>
