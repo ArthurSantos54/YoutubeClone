@@ -1,36 +1,19 @@
-//  <tr>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
 
-//             </tr>
-//             <tr>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//             </tr>
-//             <tr>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//                 <td> Exemplo </td>
-//             </tr>
+    let json =  JSON.parse(localStorage.getItem("userData")) || [];
 
-            let json =  JSON.parse(localStorage.getItem("userData")) || [];
+    let tabelaEl = document.getElementById("dados-usuario")
+    
+    console.log(json);
 
-            let tabela = document.getElementById("dados-usuario")
-            console.log(json);
+    tabelaEl.innerHTML = `
+    <tr> 
+    <td>${json[0]}</td>
+
+
+
+    
+    </tr>
+    
+    
+    
+    `;
