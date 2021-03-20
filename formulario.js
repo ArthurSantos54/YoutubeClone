@@ -11,7 +11,7 @@ function getDataFormulario () {
  
        if(el.id != 'acao'){
  
-         itemInput.push(`${el.id}: ${el.value}`);
+         itemInput.push(` ${el.value}`);
  
        }
  
