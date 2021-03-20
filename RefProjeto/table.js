@@ -17,9 +17,9 @@ tabelaEl.innerHTML = `
       <td>${json[6]}</td>
       <td>${json[7]}</td>
       <td>${json[9] == "on"? "Sim" : "Não"}</td>
-
     </tr>
   `;
 
 
-
+//Object.assign()
+//push()
