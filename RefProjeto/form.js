@@ -8,7 +8,7 @@ function getDataForm () {
 
       if(el.id != 'enviar'){
 
-        itemInput.push(`${el.id}: ${el.value}`);
+        itemInput.push(`${el.value}`);
 
       }
 
