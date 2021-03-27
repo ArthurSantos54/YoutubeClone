@@ -1,24 +1,28 @@
+let json = JSON.parse(localStorage.getItem('userData')) || [];
+
 let formularioCadastro = document.getElementById('formulario-cadastro')
 
 
-//let json = JSON.parse(localStorage.getItem('userData')) || [];
 
 function getDataFormulario () {
 
-   let itemInput = [];
+   let newData = [];
  
    [...formularioCadastro].forEach(el => {
  
        if(el.id != 'acao'){
  
-         itemInput.push(` ${el.value}`);
+       newData.push(`${el.value}`);
  
        }
  
-       json = itemInput;
- 
    });
- 
+
+   let user = Object.assign({},newData);
+   json.push(user);
+
+ //console.log(json);
+
    return json
  
  }
