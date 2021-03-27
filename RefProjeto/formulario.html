@@ -4,11 +4,14 @@
         <title>Formulario de Cadastro</title>
         <link rel="stylesheet" type="text/css" href="form.css">
     </head>
+    <div class="btn-link-box">
+       <h3><a href="tabela.html">Visualizar Dados</a></h3>
+    </div>
     <body>
 
         <div class="form-estilo">
         <h2 class="form-titulo">Fórmulario de Cadastro</h2>
-        <form id="form-cadastro" autocomplete="off" >
+        <form id="form-cadastro" autocomplete="off" onsubmit="return false" >
 
             <!--Inicio da Primeira Seção com Seus Dados-->
             <div class="secao"><span>1</span>Seus Dados</div>
@@ -39,7 +42,7 @@
                 <span class="trabalha">
 
             <div class="secao-botao">
-                <input type="checkbox" class="form-checkbox" id="trabalha-checkbox" />Trabalha?
+                <input type="checkbox" class="form-checkbox" id="trabalha-checkbox"  />Trabalha?
             </div> <!--Fim Seção do botão -->
             </span>
             </div>

@@ -3,23 +3,26 @@ let json = JSON.parse(localStorage.getItem('userData')) || [];
 
 let tabelaEl = document.getElementById("dados-usuarios-table")
 
-console.log(json);
+ //console.log(json)
+
+for (let user of json){
+
+  row = `
+      <tr>
+        <td>${user[0]}</td>
+        <td>${user[1]}</td>
+        <td>${user[2]}</td>
+        <td>${user[3]}</td>
+        <td>${user[4]}</td>
+        <td>${user[5]}</td>
+        <td>${user[6]}</td>
+        <td>${user[7]}</td>
+        <td>${user[8] == "true"? "Sim" : "Não"}</td>
+      </tr>`
+
+  tabelaEl.innerHTML += row
+
+}
 
 
-tabelaEl.innerHTML = `
-    <tr>
-      <td>${json[0]}</td>
-      <td>${json[1]}</td>
-      <td>${json[2]}</td>
-      <td>${json[3]}</td>
-      <td>${json[4]}</td>
-      <td>${json[5]}</td>
-      <td>${json[6]}</td>
-      <td>${json[7]}</td>
-      <td>${json[9] == "on"? "Sim" : "Não"}</td>
-    </tr>
-  `;
 
-
-//Object.assign()
-//push()
