@@ -1,0 +1,48 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+
+   body{
+       background-color:rgba(128, 128, 128, 0.658);
+   }
+   
+   .formulario .Dados-do-formulario{
+	padding: 15px;
+    margin-bottom: 1px;
+    
+}
+    .formulario label{
+	display:flexbox;
+	font: 15px Arial, Helvetica, sans-serif;
+	color: #888;	
+}
+    
+   form{
+       background-color: white;
+       max-width: 1000px;
+       width:90%;
+       padding:100px;
+       position:absolute;
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%,-50%);
+
+   }
+   form h2{
+       text-align:center;
+       color:grey;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+    
+   form input[type=submit]{
+       width: 15%;
+       height:25px;
+       cursor: pointer;
+       background: grey;
+       color:white;
+       border: 10px;
+       border-radius: 10px;
+       transition:1s;
+   }
+   form input[type=submit]:hover{
+       background-color: rgba(128, 128, 128, 0.589);
+   }
+   
