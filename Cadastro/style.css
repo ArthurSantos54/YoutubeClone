@@ -1,24 +1,39 @@
-*{margin:0;padding:0;box-sizing: border-box;}
+*{margin:10;padding:1;box-sizing:content-box;}
 
    body{
        background-color:rgba(128, 128, 128, 0.658);
    }
-   
+
+
+
+  
+  input{
+    width: 130px;
+    border-radius: 5px;
+     margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+
+
+
    .formulario .Dados-do-formulario{
-	padding: 15px;
-    margin-bottom: 1px;
+	padding: 20px;
+    margin-bottom: 10px;
     
 }
     .formulario label{
 	display:flexbox;
+    text-align: center;
 	font: 15px Arial, Helvetica, sans-serif;
-	color: #888;	
-}
+	color: black;	
+    }
     
    form{
        background-color: white;
-       max-width: 1000px;
-       width:90%;
+       max-width: 700px;
+       width:80%;
        padding:100px;
        position:absolute;
        left: 50%;
@@ -26,23 +41,37 @@
        transform: translate(-50%,-50%);
 
    }
-   form h2{
-       text-align:center;
-       color:grey;
-       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+   form label[type=Name]{
+    width: 26%;
+    top: 35%;
+    left: 10%;
+    position:fixed;
+     
    }
-    
+   form label[type=Age]{
+    width: 62%;
+    top: 35%;
+    left: 10%;
+    position:fixed;
+   }
+   form label[type=Pais]{
+    width: 97%;
+    top: 35%;
+    left: 10%;
+    position:fixed;
+   }
    form input[type=submit]{
        width: 15%;
-       height:25px;
+       height:22px;
        cursor: pointer;
-       background: grey;
+       background: #3498DB;
        color:white;
        border: 10px;
-       border-radius: 10px;
+       border-radius: 5px;
        transition:1s;
    }
    form input[type=submit]:hover{
-       background-color: rgba(128, 128, 128, 0.589);
+       background-color: #191970;
    }
    
