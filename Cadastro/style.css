@@ -1,12 +1,11 @@
-*{margin:10;padding:1;box-sizing:content-box;}
+*{margin:16;padding:1;box-sizing:content-box;}
 
    body{
-       background-color:rgba(128, 128, 128, 0.658);
+       background-color:white;
+       
+
    }
 
-
-
-  
   input{
     width: 130px;
     border-radius: 5px;
@@ -15,13 +14,13 @@
     
 }
 
-
-
-
    .formulario .Dados-do-formulario{
-	padding: 20px;
-    margin-bottom: 10px;
-    
+	padding: 150px;
+    margin-bottom: 20px;
+   border-width: 1px 1px 1px 1px;
+   border-radius: 10px;
+   border-style:groove;
+   border-color:#3498DB
 }
     .formulario label{
 	display:flexbox;
@@ -32,7 +31,7 @@
     
    form{
        background-color: white;
-       max-width: 700px;
+       max-width: 1500px;
        width:80%;
        padding:100px;
        position:absolute;
@@ -43,22 +42,22 @@
    }
   
    form label[type=Name]{
-    width: 26%;
-    top: 35%;
-    left: 10%;
+    width: 31%;
+    top: 36%;
+    left: 13%;
     position:fixed;
      
    }
    form label[type=Age]{
-    width: 62%;
-    top: 35%;
-    left: 10%;
+    width: 60%;
+    top: 36%;
+    left: 13%;
     position:fixed;
    }
    form label[type=Pais]{
-    width: 97%;
-    top: 35%;
-    left: 10%;
+    width: 88%;
+    top: 36%;
+    left: 13%;
     position:fixed;
    }
    form input[type=submit]{
@@ -75,3 +74,22 @@
        background-color: #191970;
    }
    
+   #dados{
+    background-color:  rgba(128, 128, 128, 0.212);
+    width: 94%;
+    
+    border-collapse:collapse;
+}
+
+  
+    #dados th, td {
+    border: 1px solid;
+    padding: 2px;
+    text-align:justify;
+  }
+    #dados th {
+    background-color:#4169E1;
+    color: white;
+    font: 15px Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
