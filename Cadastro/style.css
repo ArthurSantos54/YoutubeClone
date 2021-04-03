@@ -7,22 +7,22 @@
    }
 
   input{
-    width: 130px;
+    width: 180px;
     border-radius: 5px;
      margin-bottom: 20px;
     cursor: pointer;
 
 }
 
-   .formulario .Dados-do-formulario{
+ .corpo-do-formulario{
 	padding: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
    border-width: 1px 1px 1px 1px;
    border-radius: 10px;
    border-style:groove;
    border-color:#3498DB
 }
-    .formulario label{
+    .corpo-do-formulario label{
 	display: flexbox;
     text-align: center;
 	font: 15px Arial, Helvetica, sans-serif;
@@ -32,31 +32,31 @@
    form{
        background-color: white;
        max-width: 1500px;
-       width:80%;
+       width:70%;
        padding:100px;
        position:absolute;
-       left: 50%;
-       top: 50%;
+       left: 49%;
+       top: 47%;
        transform: translate(-50%,-50%);
 
    }
 
-   form label[type=Name]{
-    width: 31%;
-    top: 36%;
+   form label[ for="nome"]{
+    width: 15%;
+    top: 32%;
     left: 13%;
     position:fixed;
 
    }
-   form label[type=Age]{
-    width: 60%;
-    top: 36%;
+   form label[for="idade"]{
+    width: 53%;
+    top: 32%;
     left: 13%;
     position:fixed;
    }
-   form label[type=Pais]{
-    width: 88%;
-    top: 36%;
+   form label[for="pais"]{
+    width: 89%;
+    top: 32%;
     left: 13%;
     position:fixed;
    }

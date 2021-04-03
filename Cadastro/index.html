@@ -6,51 +6,47 @@
    
     <body>
       
+        <div class="linha-quadro">
         
-        <form>
-            <div class="Formulario">
-            <div class="Dados-do-formulario">
-                
-            <label type="Name" for="txt">Nome</label>
-           
-            <input type="Nome" id="txt" />
-           
-            <label type="Age" for="txt2">Idade</label>
-            
-            <input type="text" id="txt" />
+     <form class="corpo-do-formulario">
           
-            <label type="Pais" for="txt2">País</label>
-         
-            <input type="text" id="txt" />
-            <input type="submit" name= "acao" class="form-input"  value="Enviar"/> 
-            <table id="dados-table">
+                
+        <label type="text" for="nome">Nome</label>
+        <input type="text" id="nome"/>
 
+        <label type="text" for="idade">Idade</label>
+        <input type="number" id="idade"/>
 
+        <label type="text" for="pais">País</label>
+        <input type="text" id="pais" />
+
+        <input type="submit" name= "acao" class="form-input"  value="Enviar"/>
+    </form>
+    <div class="linha"></div>
 
         <table id="dados">
 
-                <thead>
-                   
-
-                  <tr>
-                    <th>Nome</th>
-                    <th>Idade</th>
-                    <th>País</th>
-                  </tr>
-                  <td>Exemplo</td>
-                  <td>Exemplo</td>
-                  <td>Exemplo</td>
-                  
-                </thead>
+              <thead> 
+                <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>País</th>
+                </tr> 
+            </thead> 
+            <tr>
+                <td>Exemplo</td>
+                <td>Exemplo</td>
+                <td>Exemplo</td>
+            </tr>
             
 
             <tbody id='dados-usuarios-table'>
             
             </tbody>
             
-              </table>
-        </div>
+        </table>
+
     </div>
-        </form>
+
     </body>
 </html>
