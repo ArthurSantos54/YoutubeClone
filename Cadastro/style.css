@@ -2,7 +2,7 @@
 
    body{
        background-color:white;
-       
+
 
    }
 
@@ -11,7 +11,7 @@
     border-radius: 5px;
      margin-bottom: 20px;
     cursor: pointer;
-    
+
 }
 
    .formulario .Dados-do-formulario{
@@ -23,12 +23,12 @@
    border-color:#3498DB
 }
     .formulario label{
-	display:flexbox;
+	display: flexbox;
     text-align: center;
 	font: 15px Arial, Helvetica, sans-serif;
-	color: black;	
+	color: black;
     }
-    
+
    form{
        background-color: white;
        max-width: 1500px;
@@ -40,13 +40,13 @@
        transform: translate(-50%,-50%);
 
    }
-  
+
    form label[type=Name]{
     width: 31%;
     top: 36%;
     left: 13%;
     position:fixed;
-     
+
    }
    form label[type=Age]{
     width: 60%;
@@ -73,15 +73,15 @@
    form input[type=submit]:hover{
        background-color: #191970;
    }
-   
+
    #dados{
     background-color:  rgba(128, 128, 128, 0.212);
     width: 94%;
-    
+
     border-collapse:collapse;
 }
 
-  
+
     #dados th, td {
     border: 1px solid;
     padding: 2px;
