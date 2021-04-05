@@ -14,7 +14,7 @@
 }
 
  .corpo-do-formulario{
-	padding: 150px;
+	padding: 200px;
     margin-bottom: 30px;
    border-width: 1px 1px 1px 1px;
    border-radius: 10px;
@@ -28,10 +28,23 @@
 	color: black;
     }
 
+
+    .linha {
+       
+        width: 85%;
+        position: fixed;
+        top: 51%;
+        left: 7%;
+      
+     
+        background-color:#3460dba8;
+    }
+    
+
    form{
        background-color: white;
        max-width: 1500px;
-       width:70%;
+       width:65%;
        padding:100px;
        position:absolute;
        left: 49%;
@@ -41,22 +54,22 @@
    }
 
    form label[ for="nome"]{
-    width: 15%;
-    top: 32%;
+    width: 22%;
+    top: 34%;
     left: 13%;
     position:fixed;
 
    }
    form label[for="idade"]{
     width: 53%;
-    top: 32%;
-    left: 13%;
+    top: 34%;
+    left: 15%;
     position:fixed;
    }
    form label[for="pais"]{
     width: 89%;
-    top: 32%;
-    left: 13%;
+    top: 34%;
+    left: 15%;
     position:fixed;
    }
    form input[type=submit]{
@@ -75,8 +88,10 @@
 
    #dados{
     background-color:  rgba(128, 128, 128, 0.212);
-    width: 94%;
-
+    width: 70%;
+    position: fixed;
+    top: 56%;
+    left: 14%;
     border-collapse:collapse;
 }
 
