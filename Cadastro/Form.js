@@ -17,10 +17,3 @@ document.querySelector('form').addEventListener('submit', event => {
     event.preventDefault();
     
 })
-function limpa() {
-    if(document.getElementById('campo').value!="") {
-    document.getElementById('campo').value="";
-    document.getElementById('campo2').value="";
-    document.getElementById('campo3').value="";
-    }
-    }
