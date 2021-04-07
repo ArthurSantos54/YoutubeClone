@@ -93,7 +93,7 @@
   
   @keyframes move {
     from {
-      transform: translateX(35px);
+      transform: translateX(20px);
     }
     to {
       transform: translateX(0);
