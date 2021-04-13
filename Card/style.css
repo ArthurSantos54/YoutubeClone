@@ -12,7 +12,7 @@ body{
     border-radius: 6px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 23%;
     transform: translate(-50%,-50%);
     box-shadow: 0px 1px 10px 1px #000;
     overFlow: hidden;
@@ -71,4 +71,93 @@ body{
     background: transparent;
     color: darkgrey;
     border: 2px solid darkgrey;
+}
+#linha {
+    height: 900px;
+    width: 5%;
+    border-right: 3px solid darkgrey;
+    position: fixed;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%,-50%); 
+}
+.Formulario{
+    width: 300px;
+    height: 430px;
+    background: #FFF;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 74%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 1px 10px 1px #000;
+    overFlow: hidden;
+    display: inline-block;
+}
+.cor-fundo{
+    height: 900px;
+    background:darkgrey;
+}
+input{
+    width: 280px;
+    border-radius: 6px;
+     margin-bottom: 50px;
+    cursor: pointer;
+}
+#nome{
+    width: 90%;
+    top: 13%;
+    left: 4%;
+    height: 28px;
+    position:fixed;
+   }
+#Profissão{
+    width: 90%;
+    top: 36%;
+    left: 4%;
+    height: 28px;
+    position:fixed;
+   }
+ #Imagem{
+    width: 75%;
+    top: 60%;
+    left: 4%;
+    height: 28px;
+    position:fixed;
+   }  
+   form input[type=reset]{
+    width: 25%;
+    height:30px;
+    cursor: pointer;
+    background: black;
+    color:white;
+    border: 10px;
+    border-radius: 5px;
+    transition:1s;
+    top: 90%;
+    left: 38%;
+    position:fixed;
+}
+form input[type=reset]:hover{
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+}
+form label[ for="nome"]{
+    width: 22%;
+    top: 7%;
+    left: 39%;
+    position:fixed;
+}
+form label[ for="Profissão"]{
+    width: 22%;
+    top: 30%;
+    left: 39%;
+    position:fixed;
+}
+form label[ for="Imagem"]{
+    width: 22%;
+    top: 54%;
+    left: 34%;
+    position:fixed;
 }
