@@ -1,19 +1,24 @@
-function cadPessoa(Nome, Idade, Pais){
-    var dados = document.getElementById("dados");
-    var qtdLinhas = dados.rows.length;
-    var linha = dados.insertRow(qtdLinhas);
+var inputNome = document.getElementById("nome");
+var inputIdade = document.getElementById("idade");
+var inputPais = document.getElementById("pais");
+var tabelaDados = document.getElementById("dados-usuarios-table");
 
-    var cellNome = linha.insertCell(0);
-    var cellIdade = linha.insertCell(1);
-    var cellPais = linha.insertCell(2);
-
-    cellNome.innerHTML = Nome;
-    cellIdade.innerHTML = Idade;
-    cellPais.innerHTML = Pais;
-
+function cadPessoa(tabela,nome,idade,pais){
+    if(nome.value && idade.value && pais.value !=""){        
+        let linha = `
+            <tr>
+                <td>${nome.value}</td>
+                <td>${idade.value}</td>
+                <td>${pais.value}</td>            
+            </tr>`
+         tabela.innerHTML += linha;        
+    } else{
+        alert("Por favor preencher todos os campos!")
+    }
 }
 
 document.querySelector('form').addEventListener('submit', event => {
     event.preventDefault();
     
 })
+
