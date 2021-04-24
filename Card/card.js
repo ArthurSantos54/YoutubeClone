@@ -1,17 +1,41 @@
-function mudarTitulo(novoTitulo) {
-    document.querySelector("#titulo").innerHTML = nome.value;
-    document.querySelector("#profissao").innerHTML = Profissão.value;
-    document.querySelector("#bio-perfil").innerHTML = biografia.value;
+
+var inputNome = document.getElementById("nome");
+var inputProfissao = document.getElementById("Profissão");
+var inputBiografia = document.getElementById("biografia");
+
+var nomeTitulo = document.getElementById("titulo");
+var profissao = document.getElementById("profissao");
+var bioPerfil = document.getElementById("bio-perfil");
+
+var botaoEl = document.querySelector('.nbtn-enviar')
+
+function inserirValores(
+    nomeInput,
+    profissaoInput,
+    biografiaInput,
+    tituloNome,
+    profissao,
+    perfilBio
+    ) {
+    if (nomeInput.value != "" && profissaoInput.value != "" && biografiaInput.value != ""){
+        tituloNome.innerHTML = nomeInput.value;
+        profissao.innerHTML = profissaoInput.value;
+        perfilBio.innerHTML = biografiaInput.value;
+    }else{
+        alert("Por favor preencher todos campos!")
+    }
 }
 
 
 
-let nomeUsarioEL = document.getElementById('nome-perfil');
-let bioEl = document.getElementById('bio-perfil');
+botaoEl.addEventListener('click', function (){
+    inserirValores(inputNome,inputProfissao,inputBiografia,nomeTitulo,profissao,bioPerfil);
+});
 
-
-nomeUsuarioEl.innerHTML = "joão"
-console.log(bioEL.innerText) //olha lá no console do navegador
-
-//como exemplo acima você vai pegar os elementos que vão receber as informações
-// e colonar no cartão
+botaoEl.addEventListener('keypress', function (e){
+    if(e.key == "Enter"){
+        inserirValores(inputNome,inputProfissao,inputBiografia,nomeTitulo,profissao,bioPerfil);
+    }else{
+        console.log(e.key)
+    }
+})
