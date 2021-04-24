@@ -114,21 +114,28 @@ input{
    }
 #Profissão{
     width: 90%;
-    top: 36%;
+    top: 33%;
     left: 4%;
     height: 28px;
     position:fixed;
    }
+ #biografia{
+    width: 90%;
+    top: 52%;
+    left: 4%;
+    height: 28px;
+    position:fixed;
+ }
  #Imagem{
     width: 71%;
-    top: 60%;
+    top: 71%;
     left: 4%;
     height: 28px;
     position:fixed;
    }  
    #arquivo{
     width: 15%;
-    top: 60%;
+    top: 71%;
     left: 81%;
     height: 34px;
     position:fixed;
@@ -148,7 +155,7 @@ input{
     border: 2px solid black;
 }
    form input[type=reset]{
-    width: 25%;
+    width: 30%;
     height:30px;
     cursor: pointer;
     background: black;
@@ -157,7 +164,7 @@ input{
     border-radius: 5px;
     transition:1s;
     top: 90%;
-    left: 38%;
+    left: 35%;
     position:fixed;
 }
 form input[type=reset]:hover{
@@ -173,13 +180,19 @@ form label[ for="nome"]{
 }
 form label[ for="Profissão"]{
     width: 22%;
-    top: 30%;
+    top: 27%;
     left: 36%;
     position:fixed;
 }
 form label[ for="Imagem"]{
     width: 22%;
-    top: 54%;
+    top: 65%;
+    left: 37%;
+    position:fixed;
+}
+form label[for="biografia"]{
+    width: 22%;
+    top: 46%;
     left: 37%;
     position:fixed;
 }
