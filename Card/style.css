@@ -155,7 +155,7 @@ input{
     border: 2px solid black;
 }
    form input[type=reset]{
-    width: 30%;
+    width: 90%;
     height:30px;
     cursor: pointer;
     background: black;
@@ -164,7 +164,7 @@ input{
     border-radius: 5px;
     transition:1s;
     top: 90%;
-    left: 35%;
+    left: 5%;
     position:fixed;
 }
 form input[type=reset]:hover{
