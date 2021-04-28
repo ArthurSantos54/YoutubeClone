@@ -36,6 +36,8 @@ botaoEl.addEventListener('keypress', function (e){
     if(e.key == "Enter"){
         inserirValores(inputNome,inputProfissao,inputBiografia,nomeTitulo,profissao,bioPerfil);
     }else{
-        console.log(e.key)
+      
     }
 })
+
+    
