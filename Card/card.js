@@ -1,4 +1,3 @@
-
 var inputNome = document.getElementById("nome");
 var inputProfissao = document.getElementById("Profissão");
 var inputBiografia = document.getElementById("biografia");
