@@ -6,7 +6,7 @@ body{
     box-sizing:border-box;
 }
 .card-container{
-    width: 100%;
+    width: 49%;
     max-width: 300px;
     height: 430px;
     background: #FFF;
@@ -84,7 +84,7 @@ body{
     transform: translate(-50%,-50%); 
 }
 .Formulario{
-    width: 100%;
+    width: 49%;
     max-width: 300px;
     height: 430px;
     background: #FFF;
@@ -193,4 +193,106 @@ form label[for="biografia"]{
     top: 46%;
     left: 37%;
     position:fixed;
+}
+@media screen and (max-width: 720px){
+    #linha{
+        position: fixed;
+        top: 1000%;
+        left: 1000%;
+    }
+}
+@media screen and (max-width: 720px){
+    .card-container{
+        position: fixed;
+        top: 24%;
+        left: 50%;
+        width: 100%;
+        height: 290px;
+    }
+    .lower-container h3,h4{
+        box-sizing: border-box;
+        line-height: .3;
+        font-weight: lighter;   
+    }
+    .upper-container{
+        height: 80px;
+        background:darkgrey;
+    }
+    .image-container{
+        background: white;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        padding: 5px;
+        transform: translate(100px,30px);
+    }
+}
+@media screen and (max-width: 720px){
+    .Formulario{
+        position: fixed;
+        top: 76%;
+        left: 50%;
+        width: 100%;
+        height: 290px;
+    }
+    #nome{
+        width: 40%;
+        top: 13%;
+        left: 4%;
+        height: 28px;
+        position:fixed;
+       }
+    #Profissão{
+        width: 40%;
+        top: 13%;
+        left: 50%;
+        height: 28px;
+        position:fixed;
+       }
+     #biografia{
+        width: 87%;
+        top: 37%;
+        left: 4%;
+        height: 28px;
+        position:fixed;
+    }
+    #Imagem{
+        width: 87%;
+        top: 60%;
+        left: 4%;
+        height: 28px;
+        position:fixed;
+       }  
+      
+       form input[type=reset]{
+        width: 90%;
+        top: 80%;
+        left: 4%;
+        position:fixed;
+    }
+  
+    form label[ for="nome"]{
+        width: 10%;
+        top: 5%;
+        left: 19%;
+        position:fixed;
+    }
+    form label[ for="Profissão"]{
+        width: 22%;
+        top: 5%;
+        left: 60%;
+        position:fixed;
+    }
+    form label[ for="Imagem"]{
+        width: 22%;
+        top: 52%;
+        left: 39%;
+        position:fixed;
+    }
+    form label[for="biografia"]{
+        width: 22%;
+        top: 29%;
+        left: 37%;
+        position:fixed;
+    }
 }
