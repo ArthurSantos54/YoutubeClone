@@ -196,9 +196,8 @@ form label[for="biografia"]{
 }
 @media screen and (max-width: 720px){
     #linha{
-        position: fixed;
-        top: 1000%;
-        left: 1000%;
+        height: 1000px;
+        width: 1000%; 
     }
 }
 @media screen and (max-width: 720px){
@@ -294,5 +293,53 @@ form label[for="biografia"]{
         top: 29%;
         left: 37%;
         position:fixed;
+    }
+}
+@media screen and (max-height: 567px){
+    .card-container{
+        position: fixed;
+        top: 21%;
+        left: 63%;
+        height: 220px;
+    }
+    .lower-container h3,h4{
+        box-sizing: border-box;
+        line-height: .0;
+        margin-bottom: 1px;    
+    }
+    .upper-container{
+        height: 40px;
+    }
+    .image-container{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        padding: 1px;
+        transform: translate(100px,4px);
+    }
+    .image-container img{
+        width: 80px;
+        height: 80px;
+      
+    }
+    .lower-container p{
+        font-size: 16px;
+        color:gray;
+        margin-bottom: 15px;
+    }
+
+    .Formulario{
+        position: fixed;
+        top: 76%;
+        left: 37%;
+        width: 100%;
+        height: 255px;
+        
+    }
+}
+@media screen and  (max:720px){
+    .card-container{
+        height: 1000px;
+        width: 1000%; 
     }
 }
