@@ -279,7 +279,7 @@ form label[for="biografia"]{
     form label[ for="Profissão"]{
         width: 22%;
         top: 5%;
-        left: 60%;
+        left: 62%;
         position:fixed;
     }
     form label[ for="Imagem"]{
@@ -291,7 +291,7 @@ form label[for="biografia"]{
     form label[for="biografia"]{
         width: 22%;
         top: 29%;
-        left: 37%;
+        left: 39%;
         position:fixed;
     }
 }
@@ -299,12 +299,14 @@ form label[for="biografia"]{
     .card-container{
         position: fixed;
         top: 21%;
-        left: 63%;
+        left: 50%;
         height: 220px;
+        max-width: 400px;
+        
     }
     .lower-container h3,h4{
         box-sizing: border-box;
-        line-height: .0;
+        line-height: .4;
         margin-bottom: 1px;    
     }
     .upper-container{
@@ -314,8 +316,8 @@ form label[for="biografia"]{
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        padding: 1px;
-        transform: translate(100px,4px);
+        padding: 5px;
+        transform: translate(155px,0px);
     }
     .image-container img{
         width: 80px;
@@ -325,21 +327,17 @@ form label[for="biografia"]{
     .lower-container p{
         font-size: 16px;
         color:gray;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .Formulario{
         position: fixed;
         top: 76%;
-        left: 37%;
-        width: 100%;
+        left: 50%;
+        width: 200%;
         height: 255px;
+        max-width: 400px;
         
     }
 }
-@media screen and  (max:720px){
-    .card-container{
-        height: 1000px;
-        width: 1000%; 
-    }
-}
+
