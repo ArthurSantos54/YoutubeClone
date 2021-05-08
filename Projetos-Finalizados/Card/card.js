@@ -15,13 +15,14 @@ function inserirValores(
     biografiaInput,
     tituloNome,
     profissao,
-    perfilBio
+    perfilBio,
+    novaImagem
     ) {
-    if (nomeInput.value != "" && profissaoInput.value != "" && biografiaInput.value != ""){
+    if (nomeInput.value != "" && profissaoInput.value != "" && biografiaInput.value != "" && novaImagem.value != ""){
         tituloNome.innerHTML = nomeInput.value;
         profissao.innerHTML = profissaoInput.value;
         perfilBio.innerHTML = biografiaInput.value;
-        pegarNovaImagem (inputImagem);
+        pegarNovaImagem (novaImagem);
     }else{
         alert("Por favor preencher todos campos!")
     }
@@ -34,7 +35,8 @@ botaoEl.addEventListener('click', function (){
         inputBiografia,
         nomeTitulo,
         profissao,
-        bioPerfil
+        bioPerfil,
+        inputImagem
     );
 });
 
@@ -46,7 +48,8 @@ botaoEl.addEventListener('keypress', function (e){
             inputBiografia,
             nomeTitulo,
             profissao,
-            bioPerfil
+            bioPerfil,
+            inputImagem
         );
     }else{
 
@@ -58,3 +61,4 @@ function pegarNovaImagem (novaImagem){
         document.getElementById('img-perfil').src = novaImagem.value;
     };
 }
+
