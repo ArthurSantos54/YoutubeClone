@@ -196,7 +196,7 @@ form label[for="biografia"]{
 }
 @media screen and (max-width: 720px){
     #linha{
-        height: 1000px;
+        
         width: 1000%; 
     }
 }
