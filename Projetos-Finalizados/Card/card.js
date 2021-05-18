@@ -25,7 +25,7 @@ function inserirValores(
         perfilBio.innerHTML = biografiaInput.value;
         pegarNovaImagem (novaImagem);
     }else{
-        alert("Por favor preencher todos campos!")
+        swal("Por favor preencher todos campos!");
     }
 }
 

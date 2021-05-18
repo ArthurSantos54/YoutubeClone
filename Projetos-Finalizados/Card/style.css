@@ -202,11 +202,12 @@ form label[for="biografia"]{
 }
 @media screen and (max-width: 720px){
     .card-container{
-        position: fixed;
-        top: 24%;
+        position: relative;
+        top: 300px;
         left: 50%;
         width: 100%;
-        height: 290px;
+        max-width: 350px;
+        height: 550px;
     }
     .lower-container h3,h4{
         box-sizing: border-box;
@@ -223,16 +224,17 @@ form label[for="biografia"]{
         height: 85px;
         border-radius: 50%;
         padding: 5px;
-        transform: translate(100px,30px);
+        transform: translate(125px,30px);
     }
 }
 @media screen and (max-width: 720px){
     .Formulario{
-        position: fixed;
-        top: 76%;
+        position: relative;
+        top: 400px;
         left: 50%;
         width: 100%;
-        height: 290px;
+        max-width: 350px;
+        height: 550px;
     }
     #nome{
         width: 40%;
@@ -272,72 +274,28 @@ form label[for="biografia"]{
   
     form label[ for="nome"]{
         width: 10%;
-        top: 5%;
+        top: 7%;
         left: 19%;
         position:fixed;
     }
     form label[ for="Profissão"]{
         width: 22%;
-        top: 5%;
+        top: 7%;
         left: 62%;
         position:fixed;
     }
     form label[ for="Imagem"]{
         width: 22%;
-        top: 52%;
+        top: 53%;
         left: 39%;
         position:fixed;
     }
     form label[for="biografia"]{
         width: 22%;
-        top: 29%;
+        top: 30%;
         left: 39%;
         position:fixed;
     }
 }
-@media screen and (max-height: 567px){
-    .card-container{
-        position: fixed;
-        top: 21%;
-        left: 50%;
-        height: 220px;
-        max-width: 400px;
-        
-    }
-    .lower-container h3,h4{
-        box-sizing: border-box;
-        line-height: .4;
-        margin-bottom: 1px;    
-    }
-    .upper-container{
-        height: 40px;
-    }
-    .image-container{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        padding: 5px;
-        transform: translate(155px,0px);
-    }
-    .image-container img{
-        width: 80px;
-        height: 80px;
-      
-    }
-    .lower-container p{
-        font-size: 16px;
-        color:gray;
-        margin-bottom: 20px;
-    }
 
-    .Formulario{
-        position: fixed;
-        top: 76%;
-        left: 50%;
-        width: 200%;
-        height: 255px;
-        max-width: 400px;
-        
-    }
-}
 
