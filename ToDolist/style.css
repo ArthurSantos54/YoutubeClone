@@ -58,6 +58,14 @@ body{
     margin: 5px 0;
     padding: 20px;
 }
+li button{
+    transition: transform 1s;
+}
+
+li button:hover{
+    background: none;
+    transform: translateX(10px) scale(1.2);
+}
 h3{
     font-size: 28px;
     text-transform: uppercase;

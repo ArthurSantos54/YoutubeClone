@@ -8,7 +8,7 @@ var profissao = document.getElementById("profissao");
 var bioPerfil = document.getElementById("bio-perfil");
 
 var botaoEl = document.querySelector('.nbtn-enviar')
-//
+
 
 function inserirValores(
     nomeInput,
