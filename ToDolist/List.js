@@ -3,8 +3,9 @@ const btn = document.querySelector('.addTask > button');
 
 btn.addEventListener('click', addList);
 input.addEventListener('keyup', (e)=>{
-    (e.keyCode === 13 ? addList(e): null);
+    (e.key === 'Enter' ? addList(e): null);
 })
+
 function addList(e){
     const notCompleted = document.querySelector('.notCompleted');
     const Completed = document.querySelector('.completed');
@@ -21,14 +22,14 @@ function addList(e){
         input.value = '';
         notCompleted.appendChild(newLi);
         newLi.appendChild(checkBtn)
-        newLi.appendChild(delBtn)
+        newLi.appendChild(delBtn)       
     }
     checkBtn.addEventListener('click', function(){
         const parent = this.parentNode;
         parent.remove();
         Completed.appendChild(parent);
         checkBtn.style.display = 'none';
-
+     
     });
     delBtn.addEventListener('click', function(){
         const parent = this.parentNode;
