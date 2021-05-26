@@ -101,8 +101,17 @@ li button{
     border: none;
     outline: none;
     cursor: pointer;
+    animation: hover 2s;
 }
-
+@keyframes hover {
+    from {
+      transform: translateX(40px);
+      color: white;
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
 @media only screen and (max-width: 1000px) {
     body{
         background:#fff;
