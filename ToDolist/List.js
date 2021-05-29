@@ -1,6 +1,6 @@
 const input = document.querySelector('input');
 const btn = document.querySelector('.addTask > button');
-//Todas as const pegar todos os input e button com o id ou class
+//Todas as const pegar todos os input e button com o id ou class do html
 
 btn.addEventListener('click', addList);
 input.addEventListener('keyup', (e)=>{
