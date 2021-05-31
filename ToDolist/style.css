@@ -174,4 +174,7 @@ li button{
         font-size: 50px;
         
     }
+    ol li{
+        border-radius: 15px;
+    } 
 }
