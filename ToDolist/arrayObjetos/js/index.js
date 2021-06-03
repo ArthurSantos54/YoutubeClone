@@ -2,9 +2,9 @@ import { Tasks} from "./dataSource.js"
 
 
 
-[Tasks].map( ({notCompleted}) =>{
+[Tasks].map( ({Completed}) =>{
      
-    notCompleted.forEach( item =>   console.log(item) )      
+   Completed.forEach( item =>   console.log(item) )      
     
 });
 
