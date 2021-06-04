@@ -1,10 +1,10 @@
-import { Tasks} from "./dataSource.js"
+import { Tasks} from "./dataSource2.js"
 
 
 
 [Tasks].map( ({Completed}) =>{
      
-   Completed.forEach( item =>   console.log(item) )      
+   Completed.forEach( item =>   alert(item) )      
     
 });
 
