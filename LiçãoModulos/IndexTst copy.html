@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+
+        
+    <style>
+        .Adicionar{
+            width: 84%;
+            height: 25px;
+            position: relative;
+            top: 20px;
+            left: 8%;
+            border-radius: 20px;
+        }
+        .Pesquisa{
+            width: 50%;
+            height: 36px;
+            position: relative;
+            top: 350px;
+            left: 25%;
+            border-radius: 20px;
+        }
+        .Excluir{
+            width: 65%;
+            height: 36px;
+            position: relative;
+            top: 150px;
+            left: 17%;
+            border-radius: 20px;
+        }
+        .Add{
+            margin: 0 10px;
+            background: rgba(0, 0, 0, 0.89);
+            color: #fff;
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            transform: translate(-0%,-210%);
+            left: 522px;
+            transition:1s;
+        }
+        .Add:hover{
+            background: transparent;
+            color: black;
+            border: 2px solid black;
+        }
+        .Research{
+            margin: 0 10px;
+            background: rgba(0, 0, 0, 0.89);
+            color: #fff;
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            transform: translate(-0%,-10%);
+            top: 355px;
+            left: 210px;
+            transition:1s;
+        }
+        .Research:hover{
+            background: transparent;
+            color: black;
+            border: 2px solid black;
+        }
+        .Delete{
+            margin: 0 10px;
+            background: rgba(0, 0, 0, 0.89);
+            color: #fff;
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            transform: translate(-0%,-10%);
+            top: 115px;
+            left: 190px;
+            transition:1s;
+        }
+        .Delete:hover{
+            background: transparent;
+            color: black;
+            border: 2px solid black;
+        }
+    </style>
+     <div id="inputs">
+        <input type="text" class="Adicionar" placeholder="Adicionar no arrey"/>
+        <input type="text" class="Excluir" placeholder="Excluir item no arrey"/>
+        <input type="text" class="Pesquisa" placeholder="Pesquisa item do arrey"/>
+        <input type="reset" class="Add" value="Adicionar"/>
+        <input type="reset" class="Research" value="Pesquisa"/>
+        <input type="reset" class="Delete" value="Excluir"/>
+    </div>
+        
+   
+    <div id="resultado">
+        teste
+    </div>
+    
+    <script type="module" src="index.js"></script>  
+</body>
+</html>
