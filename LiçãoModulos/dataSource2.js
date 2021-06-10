@@ -1,6 +1,7 @@
 
 var buttonAdd = document.getElementById("Add");
 var deleteBtn = document.getElementById("Delete");
+var ResearchBtn = document.getElementById("Research");
 
 
 
@@ -58,6 +59,25 @@ const removerDoArrey = (valor) => {
       
         if(item = task){
             console.log('valor encontrado: ', item );
+        }else {
+            console.log('valor não encontrado');
+        }
+    })
+}
+export const pesquisaNoArrey = (pesquisa) => {
+    ResearchBtn.addEventListener('click', () =>{
+        pesquisa.value = '';
+        PesquisaItemNoArrey(pesquisa);
+
+    });
+};
+
+const PesquisaItemNoArrey = (P) => {
+    let Pesquisa = P.value;
+    Tasks.notCompleted.forEach((task) => {
+      
+        if(Pesquisa = task){
+            console.log('valor encontrado: ', Pesquisa);
         }else {
             console.log('valor não encontrado');
         }

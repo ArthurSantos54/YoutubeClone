@@ -1,7 +1,8 @@
 var inputAdicionar = document.getElementById("Adicionar");
 var inputExcluir = document.getElementById("Excluir");
+var inputPesquisa = document.getElementById("Pesquisa");
 
-import { Tasks, pegarDados, excluirDados} from "./dataSource2.js";
+import { Tasks, pegarDados, excluirDados, pesquisaNoArrey} from "./dataSource2.js";
 
 
 
@@ -11,7 +12,7 @@ import { Tasks, pegarDados, excluirDados} from "./dataSource2.js";
     
 });
 // console.log(Tasks);
-
+pesquisaNoArrey(inputPesquisa);
 pegarDados(inputAdicionar);
 
 excluirDados(inputExcluir);
