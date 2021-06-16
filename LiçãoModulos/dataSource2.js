@@ -30,7 +30,7 @@ export const pegarDados = (inputAddDados) => {
         resultadoEl.innerText = inputAddDados.value;
         salvarDados(inputAddDados);  
         inputAddDados.value = '';
-
+        
     })
 };
 
@@ -41,19 +41,27 @@ const salvarDados = (dados) => {
 
 export const excluirDados = (inputDeleteDados) => {
     deleteBtn.addEventListener('click', () =>{
-
-     console.log(inputDeleteDados.value);
-     inputDeleteDados.value = '';
-     removerDoArrey(inputDeleteDados);
-
-     resultado.innerText = " Valor removido do arrey"
+        
+        console.log(inputDeleteDados.value);
+        inputDeleteDados.value = '';
+        removerDoArrey(inputDeleteDados);
+        
+        resultado.innerText = " Valor removido do arrey"
     });
-
+    
 };
 
 const removerDoArrey = (valor) => {
-     let item = valor.value;
-     
+    let item = valor.value;
+    
+    var valor = "a";
+    var indice =  Tasks.notCompleted.indexOf(valor);
+    while(indice >= 0){
+        Tasks.notCompleted.splice(indice);
+        indice = Tasks.notCompleted.indexOf(valor);
+    }
+
+    console.log(indice );
     Tasks.notCompleted.forEach((task, index) => {
         
         if(item == task){
