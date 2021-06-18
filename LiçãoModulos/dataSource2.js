@@ -41,10 +41,19 @@ const salvarDados = (dados) => {
 
 export const excluirDados = (inputDeleteDados) => {
     deleteBtn.addEventListener('click', () =>{
-        
         console.log(inputDeleteDados.value);
-        inputDeleteDados.value = '';
-        removerDoArrey(inputDeleteDados);
+        
+        //  var valor = "a";
+        
+        var indice =  Tasks.notCompleted.indexOf(inputDeleteDados);
+        while(indice >= 0){
+            Tasks.notCompleted.splice(indice);
+            indice = Tasks.notCompleted.indexOf(inputDeleteDados);
+        }
+        
+        console.log(indice );
+         inputDeleteDados.value = '';
+         removerDoArrey(inputDeleteDados);
         
         resultado.innerText = " Valor removido do arrey"
     });
@@ -54,14 +63,6 @@ export const excluirDados = (inputDeleteDados) => {
 const removerDoArrey = (valor) => {
     let item = valor.value;
     
-    var valor = "a";
-    var indice =  Tasks.notCompleted.indexOf(valor);
-    while(indice >= 0){
-        Tasks.notCompleted.splice(indice);
-        indice = Tasks.notCompleted.indexOf(valor);
-    }
-
-    console.log(indice );
     Tasks.notCompleted.forEach((task, index) => {
         
         if(item == task){
