@@ -12,12 +12,16 @@ export let Tasks ={
 
 export const pegarDados = (inputAddDados) => {
     buttonAdd.addEventListener('click', () => {
-        resultadoEl.innerText = inputAddDados.value;
-        salvarDados(inputAddDados);  
-        inputAddDados.value = '';
-        
+        if (inputAddDados.value != ""){
+            resultadoEl.innerText = inputAddDados.value;
+            salvarDados(inputAddDados);  
+            inputAddDados.value = '';
+        }else{
+            resultadoEl.innerHTML = 'Por favor preencher esse campo!';       
+        }
     })
-};
+}
+;
 
 const salvarDados = (dados) => {
     Tasks.notCompleted.push(dados.value);
@@ -70,7 +74,8 @@ export const pesquisaNoArrey = (pesquisa) => {
         } else {
           resultadoEl.innerHTML = 'Valor não encontrado!';
       }
-      pesquisa.value = '';
+
+          pesquisa.value = '';
     });         
 };
 
