@@ -15,10 +15,10 @@ export const pegarDados = (inputAddDados) => {
         if (inputAddDados.value != ""){
             resultadoEl.innerText = inputAddDados.value;
             salvarDados(inputAddDados);  
-            inputAddDados.value = '';
         }else{
             resultadoEl.innerHTML = 'Por favor preencher esse campo!';       
         }
+        inputAddDados.value = '';
     })
 }
 ;
