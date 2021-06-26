@@ -10,7 +10,7 @@ input.addEventListener('keyup', (e)=>{
 // Arrow function executar todos esses eventos, e o e.key e para colocar a tecla que vc quer 
 // Que o usuario clica sobre ela para acontece algo nesse caso era para adicionar uma tarefa.
 
-function addList(e){
+export default function addList(e){
     const notCompleted = document.querySelector('.notCompleted');
     const Completed = document.querySelector('.completed');
 // Essas const esta pegando os lugar que vai ficar as tarefas
@@ -21,8 +21,8 @@ function addList(e){
     const delBtn = document.createElement('button');
 // e a delBtn e para apagar a tarefa e o checkBtn colocar como finalizado
 
-    checkBtn.innerHTML = '<i class="fa fa-check"></i>';
-    delBtn.innerHTML = '<i class="fa fa-trash"></i>';
+    checkBtn.innerHTML = '<i id="check" class="fa fa-check"></i>';
+    delBtn.innerHTML = '<i id="trash" class="fa fa-trash"></i>';
     
     if(input.value !== ''){
         newLi.textContent = input.value;
