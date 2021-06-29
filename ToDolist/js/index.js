@@ -1,3 +1,15 @@
-import addList from "./List.js";
+var inputAdicionar = document.getElementById("Adicionar");
 
-addList();
+
+
+
+import {Tasks,pegarDados} from "./data.js";
+
+[Tasks].push( ({Adicionar}) =>{
+     
+    Adicionar.forEach( item =>  console.log(item) )      
+    
+});
+pegarDados(inputAdicionar);
+// import addList from "./List.js";
+// addList();
