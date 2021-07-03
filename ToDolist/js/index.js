@@ -1,15 +1,18 @@
-var inputAdicionar = document.getElementById("Adicionar");
+import addList from "./List.js";
+import {moverTask} from "./moveToCompleted.js"
 
 
 
+addList();
 
-import {Tasks,pegarDados} from "./data.js";
-
-[Tasks].push( ({Adicionar}) =>{
+// [Tasks].push( ({Adicionar}) =>{
      
-    Adicionar.forEach( item =>  console.log(item) )      
+//     Adicionar.forEach( item =>  console.log(item) )      
     
-});
-pegarDados(inputAdicionar);
-// import addList from "./List.js";
-// addList();
+// });
+
+
+moverTask()
+
+
+
