@@ -12,7 +12,7 @@ addList();
 // });
 
 
-moverTask()
+moverTask();
 
 
 

@@ -10,12 +10,8 @@ var checkBtn = document.getElementById("check");
 export const moverTask = () => {
 
 if(checkBtn !== undefined){
-
-    console.log("inserir primeir uma task");
-
-}
-
+    let check = checkBtn.value    
+    Tasks.notCompleted.push(check);
+    console.log(Tasks.notCompleted);
 };
-
-
-    
+}
