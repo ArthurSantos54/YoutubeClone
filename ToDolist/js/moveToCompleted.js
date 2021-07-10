@@ -11,7 +11,7 @@ export const moverTask = () => {
 
 if(checkBtn !== undefined){
     let check = checkBtn.value    
-    Tasks.notCompleted.push(check);
-    console.log(Tasks.notCompleted);
+    Tasks.Completed.push(check);
+    console.log(Tasks.Completed);
 };
 }

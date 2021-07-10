@@ -3,4 +3,3 @@ export default {
     notCompleted: [],
     completed: [],
 };
-

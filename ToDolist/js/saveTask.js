@@ -1,4 +1,5 @@
 import Tasks from "./data.js";
+let tasks = JSON.parse(localStorage.getItem('tasks')) || Tasks;
 
 export const pegarDados = (input) => {
     let valorDoInput = input.value    
@@ -8,6 +9,13 @@ export const pegarDados = (input) => {
 };
 
 const salvarDados = (dados) => {
+
+
     Tasks.notCompleted.push(dados);
+
+
+    localStorage.setItem('tasks', JSON.stringify(Tasks))
     console.log(Tasks.notCompleted);
 };
+
+
