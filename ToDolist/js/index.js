@@ -1,9 +1,9 @@
 import addList from "./List.js";
-import {moverTask} from "./moveToCompleted.js"
+ import {local} from "./saveTask.js"
 
 
 
-addList();
+ local();
 
 // [Tasks].push( ({Adicionar}) =>{
      

@@ -29,11 +29,12 @@ export default function addList(e){
     
     if(input.value !== ''){   
         newLi.textContent = pegarDados(input);       
+             
         notCompleted.appendChild(newLi);
         newLi.appendChild(checkBtn)
         newLi.appendChild(delBtn)        
     } else {
-        //Modal
+        swal("Por favor preencher todos campos!");
     }
 
 //  NewLi adiciona uma linha, input.value = '' limpa o input,  
