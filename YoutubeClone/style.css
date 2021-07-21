@@ -27,6 +27,10 @@ body{
     position: relative;
     display: flex;
 }
+.thumbnail1{
+    position: relative;
+    display: flex;
+}
 
 .thumbnail::before{
     content: attr(data-duration);
@@ -36,7 +40,18 @@ body{
     right: 5px;
     bottom: 5px;
     padding: .1em .3em;
-    border-radius: .3em;
+    border-radius: .2em;
+    font-size: .9rem;
+}
+.thumbnail1::before{
+    content: attr(data-duration);
+    position: absolute;
+    background-color: red;
+    color:white;
+    right: 5px;
+    bottom: 5px;
+    padding: .1em .3em;
+    border-radius: .2em;
     font-size: .9rem;
 }
 
