@@ -8,7 +8,7 @@ body{
 .video-section{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 3rem 1rem;
+    gap: 2rem 1rem;
     padding: 3rem 0;
     margin: 0 1.0rem;
     border: 0px solid #ccc;
@@ -121,16 +121,16 @@ body{
 .videos{
     background-color: #f9f9f9;
 }
-.categories{
+  .categories{
     padding: 1rem 2rem;
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
-}
+} 
 
 .category-section{
     display: flex;
     overflow: hidden;
-}
+} 
 .category{
     margin-right: 1rem;
     word-wrap: none;
@@ -142,6 +142,7 @@ body{
     font-size: inherit;
     cursor: pointer;
     transition: background-color 150ms;
+    
 }
 
 .category:hover{
@@ -164,9 +165,9 @@ body{
     padding: 1rem;
 }
 
-/* .youtube-logo{
-    height: 20px;
-} */
+.youtube-logo{
+    height: 30px;
+} 
 
 .search-bar{
     display: flex;
@@ -211,4 +212,77 @@ body{
 }
 .material-icons{
     color:rgba(0, 0, 0, 0.808);
+}
+.menu-icons-mobile{
+    position:fixed;
+    top: 10000px;
+}
+@media screen and (max-width: 447px){
+    .search-bar{
+        position: fixed;
+    }
+    .search-input{
+        position:fixed;
+        top: 10000px;
+    }
+    #mobile{
+        position:fixed;
+        top: 10000px;
+    }
+    .menu-icons-mobile{
+        position: relative;
+        top: 11px;
+        left: 35px;
+        transform: translate(-75px,-20px);
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 1.5rem;
+    }
+    .video-section{
+        margin: 0 0.5rem;
+        position: relative;
+        top: 5px;
+        left: 0.5px;
+        transform: translate(-5px,-1px);
+    }
+    .menu-channel-icon{
+        position: relative;
+        top: 20px;
+        left: 160px;
+        transform: translate(-5px,-28px);
+        width: 30px;
+        height: 30px;
+    }
+     .youtube-logo{
+        height: 22px;
+        position: relative;
+        top: 21px;
+        left: 10px;
+        transform: translate(-5px,-30px);
+    } 
+    .categories{
+        border-top: 1px solid rgba(153, 153, 153, 0.308);
+        border-bottom: 0px solid white;
+        position: relative;
+        top:1px;
+        transform: translate(-5px,-19px);
+    }
+    .video-container{
+        position: relative;
+        top: 23px;
+        left: 10px;
+        transform: translate(-5px,-95px);
+    }
+    .category{
+        position: relative;
+        top: 9px;
+        left: 10px;
+        transform: translate(-5px,-9px);
+    }    
+    .category-section{
+        overflow:scroll;
+    } 
+    .categories{
+        padding: 0.5rem 0.2rem;
+    } 
 }
