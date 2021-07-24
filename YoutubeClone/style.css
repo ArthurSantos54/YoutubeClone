@@ -217,6 +217,7 @@ body{
     position:fixed;
     top: 10000px;
 }
+/* A parti daqui começa meu proprio codigo para o mobile */
 @media screen and (max-width: 447px){
     .search-bar{
         position: fixed;
