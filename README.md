@@ -4,4 +4,4 @@ Esse repositório foi dedicado ao tutorial do Danki Code, onde foi feito um clon
 
 Aproveitei a oportunidade para implementar a versão mobile.
 
-Para visualizar o resultado seguir o link <https://arthursantos54.github.io/YoutubeClone/>
+Para visualizar o resultado seguir o link <https://ar-santos.github.io/YoutubeClone/>
